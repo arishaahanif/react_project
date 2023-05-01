@@ -1,0 +1,374 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../public/Roboto-Regular.ttf);
+}
+body {
+  font-family: Roboto;
+  overflow-x: hidden;
+}
+
+                /* TOP.JS START */
+.main_top {
+  background-color: rgba(238, 138, 30);
+  padding: 9px 0px 1px 0px;
+  text-align: center;
+}
+.main_top .saving {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.main_top .saving span {
+  display: inline;
+}
+.main_top .saving span .btn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-size: 13px;
+  --bs-btn-padding-x: -0.5rem;
+  padding: 3px 5px;
+  font-weight: 600;
+}
+.main_top .saving span .btn:hover {
+  background-color: rgba(238, 138, 30);
+  color: #fff;
+}
+                                  /* END */
+                                  /* HEADER.JS START */
+.header {
+  background-color: #000;
+  color: #fff;
+}
+.header .f_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .f_container .f_item {
+  margin: 0 20px;
+}
+.header .f_container .f_item ul {
+  list-style: none;
+  display: flex;
+  font-size: 14px;
+}
+dl,
+ol,
+ul {
+  margin-bottom: 0;
+}
+.header .f_container .f_item ul .about {
+  margin: 0px 26px;
+  position: relative;
+}
+.header .f_container .f_item ul .about::after {
+  position: absolute;
+  right: -26px;
+  top: 0;
+  bottom: 0;
+  content: "";
+  width: 2px;
+  height: 15px;
+  background-color: #fff;
+  margin-top: 3px;
+}
+.header .f_container .f_item ul .about:last-child::after {
+  display: none;
+}
+.header .f_container .f_item1 {
+  margin: 0 5rem;
+}
+.header .f_container .f_item1 .btn {
+  background-color: orangered;
+  text-transform: uppercase;
+  --bs-btn-padding-x: 2.75rem;
+  border-radius: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border: 0;
+  transition: 0.5 ease;
+  margin-right: 20px;
+}
+                                   /* END */
+                                   /* NAVBAR.JS START */
+.max{
+  padding:3px 4rem;
+}
+.max .sell{
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 58px;
+
+
+}
+.max .logo img{
+  width: 150px;
+}
+
+.max .navbar-expand-lg .navbar-nav .nav-link{
+    color:#000;
+    font-weight: 600;
+    font-size: 15px;
+    margin:0 4px;
+}
+
+/* .max .navbar-expand-lg .navbar-nav .active{
+  color:rgba(238, 138, 30);
+} */
+
+.max  .navbar-expand-lg .navbar-nav .review{
+  margin: 5px 17px 6px 4px;
+  background-color: rgba(238, 138, 30);
+  padding: 3px 10px;
+  border-radius: 6px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight:600;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+border:0
+
+}
+
+.max  .navbar-expand-lg .navbar-nav .reviews{
+  --tw-bg-opacity: 1;
+
+    background-color: rgba(0,87,158,var(--tw-bg-opacity));
+    margin: 5px 17px 6px 4px;
+    padding: 3px 9px;
+  border-radius: 6px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight:600;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+
+}
+
+.max  .navbar-expand-lg .navbar-nav .reviews:active{
+  box-shadow: none;
+}
+
+.max  .navbar-expand-lg .navbar-nav .reviews:focus{
+  border: 0;
+  box-shadow: none;
+}
+
+
+.max  .navbar-expand-lg .navbar-nav .Ci_search{
+  margin-top:10px;
+  --tw-text-opacity: 1;
+    color: rgba(158,158,158,var(--tw-text-opacity));
+}
+.max  .navbar-expand-lg .icons{
+  --tw-text-opacity: 1;
+  color: rgba(158,158,158,var(--tw-text-opacity));
+  /* padding:0px 10px; */
+  margin: 0px 8px;
+
+
+}
+                                    /* END */
+.center{
+  width:100%;
+}
+.show{
+  display: flex;
+    justify-content: center;
+    padding: 31px 0px;
+}
+.show .btn{
+  background-color: #fff;
+    color: #000;
+    border: 2px solid orangered;
+    padding: 20px 14px;
+    font-size: 20px;
+    border-radius: 0;
+    box-shadow: var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow);
+    --tw-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+  
+
+
+}
+.show span .youtube{
+  margin: 0 10px;
+  color: orangered;
+
+}
+.show .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+  border:0;
+  background-color: #fff;
+  color:#000;
+  border: 2px solid orangered;
+
+}
+.modal-header{
+  border-bottom:0;
+}
+.modal-header .btn-close{
+  padding:0;
+  position: absolute;
+    top: 8px;
+    bottom: 0;
+    right: 8px;
+   background-color: orangered;
+    height: 30px;
+    width: 34px;
+}
+
+.thomas{
+  margin: -8px 14px 14px 14px;
+  border: 1px solid #f1f1f1;
+
+}
+.thomas .addition{
+  font-weight:600;
+  font-size: 15px;
+
+}
+.thomas  .training{
+  font-size: 14px;
+}
+.thomas  .training span{
+  font-weight:600;
+  letter-spacing: 1px;
+}
+.arrow{
+
+  padding: 0px 8rem;
+}
+.slick-prev {
+  left: 104px;
+
+}
+.slick-next {
+  right: 126px;
+}
+
+.slick-next:before {
+  color: red;
+  /* content: '<'; */
+  /* font-size: 61px; */
+
+
+
+}
+.slick-prev:before{
+  color: red;
+  /* content: ""; */
+  /* font-size: 61px; */
+
+}
+.safety{
+  text-align: center;
+  padding: 60px 0px;
+
+}
+.safety .priority{
+  font-weight: 700;
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+.safety .need{
+  font-size: 22px;
+  margin-bottom: 30px;
+
+}
+.safety .video{
+  border-radius: 15px;
+}
+
+
+
+/* // slider css */
+
+
+.slick-next {
+  background-image: url("https://www.oshaonlinecenter.com/images/right.png")!important;
+  display: block;
+  right: -50px !important;
+  height: 41px !important;
+  width: 50px !important;
+  filter: invert(0) sepia(0);
+  background-repeat: no-repeat !important;
+  transition: all .25s Ease;
+}
+.slick-next:hover, .slick-prev:hover{
+  filter: brightness(0);
+
+}
+
+.slick-prev {
+  background-image: url("https://www.oshaonlinecenter.com/images/left.png")!important;
+  left: -50px!important;
+  height: 41px!important;
+  width: 50px!important;
+  background-repeat: no-repeat!important;
+  transition: all .25s Ease;
+  filter: invert(0) sepia(0);
+
+}
+
+
+
+.slick-arrow.slick-next::before, .slick-arrow.slick-prev::before{
+  display: none;
+}
+.max .card-img{
+  height: 262px;
+  border-radius:0
+
+}
+.max .card{
+  margin:0 29px;
+  border-radius: 0;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+  ;
+}
+.max .card:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(-5px);
+    transition: all 0.5s;
+}
+
+.max .card .card-title{
+  margin: 15px 0px;
+  font-weight:700;
+
+}
+.max .card .card-text{
+  margin-top: 37px;
+
+}
+.max .card .card-footer{
+  background-color:#fff;
+  
+
+  
+}
+.btn-primary{
+    --bs-btn-bg:none;
+  }
