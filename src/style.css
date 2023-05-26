@@ -1,6 +1,7 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,13 @@ body {
   background-color: rgba(238, 138, 30);
   padding: 9px 0px 1px 0px;
   text-align: center;
+  /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;  */
 }
+
 .main_top .saving {
   text-transform: uppercase;
   color: #fff;
@@ -186,12 +193,12 @@ ul {
 .center {
   width: 100%;
 }
-.show {
+.show1 {
   display: flex;
   justify-content: center;
   padding: 31px 0px;
 }
-.show .btn {
+.show1 .btn {
   background-color: #fff;
   color: #000;
   border: 2px solid orangered;
@@ -203,11 +210,25 @@ ul {
   --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
-.show span .youtube {
+/* .show1 span .youtube {
+  margin: 0 10px;
+  color: orangered;
+} */
+.show1 .y_tube{
+  display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.show1 .y_tube .youtube{
   margin: 0 10px;
   color: orangered;
 }
-.show .btn-check:checked + .btn,
+.show1 .y_tube p{
+  margin-bottom: 0;
+}
+.show1 .btn-check:checked + .btn,
 .btn.active,
 .btn.show,
 .btn:first-child:active,
@@ -255,17 +276,16 @@ ul {
 .slick-next {
   right: 126px;
 }
-
-.slick-next:before {
+ .slick-next:before {
   color: red;
   /* content: '<'; */
   /* font-size: 61px; */
-}
+ }
 .slick-prev:before {
   color: red;
-  /* content: ""; */
-  /* font-size: 61px; */
 }
+  
+
 .safety {
   text-align: center;
   padding: 60px 0px;
@@ -284,7 +304,17 @@ ul {
 }
 
 /* // slider css */
+.max1 {
+  padding: 3px 4rem;
+}
+.max1 .sell{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 28px;
 
+}
 .slick-next {
   background-image: url("https://www.oshaonlinecenter.com/images/right.png") !important;
   display: block;
@@ -314,37 +344,39 @@ ul {
 .slick-arrow.slick-prev::before {
   display: none;
 }
-.max .slick-slider .slick-list {
+.max1 .slick-slider .slick-list {
   padding: 37px 0;
 }
-.max .card-img {
+.max1 .card-img {
   height: 262px;
   border-radius: 0;
 }
-.max .card {
+.max1 .card {
+  height: 529px;
+
   margin: 0 29px;
   border-radius: 0;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
-.max .card:hover {
+.max1 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: translateY(-5px);
   transition: all 0.5s;
 }
-.max .card-img-overlay {
+.max1 .card-img-overlay {
   top: -36px;
   right: -29px;
   left: initial;
 }
-.max .card-img-overlay img{
-  width:90px;
+.max1 .card-img-overlay img {
+  width: 90px;
 }
-.max .card .card-title {
+.max1 .card .card-title {
   margin: 15px 0px;
   font-weight: 700;
 }
-.max .price {
+.max1 .price {
   padding: 10px 0 0 0;
   display: flex;
 
@@ -353,23 +385,432 @@ ul {
   border-right: 1px solid #ecec;
 }
 
-.max .border_col {
+.max1 .border_col {
   border-right: 1px solid #000;
 }
 
-.max .card .card-text {
+.max1 .card .card-text {
   margin-top: 37px;
 }
-.max .enroll {
+.max1 .enroll {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 0 0 0;
 }
-.max .card .card-footer {
+.max1 .card .card-footer {
   background-color: #fff;
   padding: 0;
 }
-.btn-primary {
+.play .btn-primary {
   --bs-btn-bg: none;
+}
+.play .approved {
+  margin: 5rem 0px 3rem 0;
+
+  text-align: center;
+}
+.play .approved .customers {
+  font-weight: 700;
+}
+.play .auto_play .card {
+  margin: 50px 22px;
+  padding: 0 8px;
+  height: 300px;
+  text-align: center;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.play .auto_play .card .card-body {
+  position: relative;
+}
+.play .auto_play .card .card-body .image {
+  width: 200px;
+  margin: auto;
+}
+
+.play .slick-next {
+  background-image: url("https://www.oshaonlinecenter.com/images/right.png") !important;
+  display: block;
+  right: -55px !important;
+  height: 41px !important;
+  width: 50px !important;
+  filter: invert(0) sepia(0);
+  background-repeat: no-repeat !important;
+  transition: all 0.25s Ease;
+}
+.play .slick-prev {
+  background-image: url("https://www.oshaonlinecenter.com/images/left.png") !important;
+  left: -36 !important;
+  height: 41px !important;
+  width: 50px !important;
+  background-repeat: no-repeat !important;
+  transition: all 0.25s Ease;
+  filter: invert(0) sepia(0);
+}
+.play .slick-next:hover,
+.play .slick-prev:hover {
+  filter: brightness(0);
+}
+.play .slick-arrow.slick-next::before,
+.play .slick-arrow.slick-prev::before {
+  display: none;
+}
+.play .auto_play .card .card-img-overlay {
+  background-color: #00853e;
+  border-radius: 72px;
+  width: 5rem;
+  height: 5rem;
+  color: #fff;
+
+  position: absolute;
+  top: -44px;
+  left: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.play .auto_play .card .card-body .card-title {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 18px;
+  height: 71px;
+}
+.play .auto_play .card .card-body .text-muted {
+  display: flex;
+  justify-content: center;
+}
+.play .auto_play .card .card-body .card-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.things {
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  /* height:100vh; */
+  text-align: center;
+  padding: 4rem 0;
+}
+.things .need {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.things .get {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.things .t_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.things .t_container .t-item img {
+  border-radius: 10px;
+  /* margin-right: 50px; */
+}
+.us {
+  margin: 3rem 0;
+}
+.us .chos {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.us .certificate {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+  height: 115px;
+}
+.us .certificate .con .icon {
+  color: orangered;
+}
+.us .certificate .con .text {
+  font-size: 18px;
+  text-align: center;
+  height: 200px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.us .certificate .con .option {
+  display: block;
+}
+.guide {
+  margin-bottom: 40px;
+}
+.guide .make {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.guide .pass {
+  text-align: center;
+  margin-bottom:30px;
+}
+.guide .u_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.guide .u_container .u_item ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+.guide .u_container .u_item ul li {
+  margin-top: 5px;
+  font-size: 18px;
+}
+.guide hr {
+  width: 88%;
+  margin: 0 auto;
+  border: 1px solid;
+
+  /* height:2px; */
+}
+.course {
+  background-color: #1d1d1d;
+}
+.course .c_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem 0;
+  flex-wrap: wrap;
+}
+.course .c_container .c_item ul {
+  letter-spacing: 1px;
+}
+.course .c_container .c_item .category {
+  color: #fff;
+  margin: 40px 0;
+  text-transform: uppercase;
+}
+.course .c_container .c_item ul {
+  list-style: none;
+}
+.course .c_container .c_item ul .email a {
+  text-transform: lowercase;
+  letter-spacing: inherit;
+}
+.course .c_container .c_item ul li a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.course .c_container .c_item ul li a:hover {
+  color: orangered;
+}
+.course .c_container .c_item ul li a span {
+  display: block;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+  letter-spacing: initial;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+.course .c_container .c_item .accept {
+  color: #fff;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.course .c_container .c_item hr {
+  color: gray;
+}
+
+/* .course .c_container .borders{
+  border-right:1px solid gray;
+  padding-right:10px;
+} */
+.course .c_container .c_item .form-control {
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  border: 0;
+
+  margin: 20px 0;
+}
+.course .c_container .c_item .form-control::placeholder {
+  color: gray;
+  font-size: 16px;
+}
+.course .c_container .c_item .btn {
+  width: 100%;
+  background-color: orangered;
+  color: #fff;
+  border: 0;
+  font-weight: 600;
+  font-size: 18px;
+  /* letter-spacing: 1px; */
+  text-transform: uppercase;
+}
+.course .c_container .c_item .form-control:focus {
+  box-shadow: none;
+}
+.footer{
+  background-color: #000;
+  padding:20px 3rem;
+}
+.footer .ft_container{
+  display: flex;
+  justify-content: space-between;
+  color:#fff;
+  /* flex-wrap: wrap; */
+
+}
+
+.footer .ft_container .ft_item .para{
+ margin-bottom:0;
+ color:gray;
+}
+.footer .ft_container .ft_item .para a{
+  text-decoration: none;
+  color:gray
+}
+.footer .ft_container .ft_item .span img, svg{
+  margin:0 8px;
+}
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section .top-btn{
+  font-size: 2.4rem;
+  width:5rem;
+  height:5rem;
+  color:#fff;
+  background-color: orangered;
+  border-radius: 50%;
+  position: fixed;
+  bottom:5rem;
+  right:5rem;
+  z-index:999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+}
+@media screen and (max-width:1200px) {
+  .max{
+    padding:0;
+  }
+  .max .logo img {
+    width: 102px;
+}
+.max .navbar-expand-lg .icons{
+  display: none;
+}
+.max .navbar-expand-lg .navbar-nav .review{
+  width: 65px;
+  height: 33px;
+  font-size: 11px;
+
+}
+.max .navbar-expand-lg .navbar-nav .reviews{
+  width: 115px;
+  height: 31px;
+  font-size: 10px;
+
+}
+.max .navbar-expand-lg .navbar-nav .nav-link{
+  font-size: 14px;
+
+}
+.things .t_container .t-item img{
+  margin-bottom:20px;
+
+}
+.us .certificate .con .text{
+  font-size: 15px;
+
+}
+.guide .u_container .u_item ul li{
+  font-size: 16px;
+
+}
+}
+@media screen and (max-width:992px) {
+  .header {
+    display: none;
+  }
+  .max{
+    padding: 3px 4rem;
+  }
+  .max1 .card {
+    height: 576px;
+  }
+  .show{
+    display: block;
+  }
+}
+@media screen and (max-width:992px) {
+  .max1 .card {
+    height: 576px;
+  }
+}
+@media screen and (max-width:768px) {
+  .safety .priority{
+    font-size: 28px;
+
+  }   
+  .play .approved .customers{
+    font-size: 26px;
+
+  }
+  .say{
+    width:483px;
+  }
+  .safety .video {
+    width:560px;
+
+  }
+ .show1 .btn{
+  width: 431px;
+    font-size: 14px;
+ }
+}
+@media screen and (max-width:768px) {
+
+.safety .priority {
+  font-size: 19px;
+}
+.safety .need {
+  font-size: 17px;
+}
+.safety .video{
+  width:400px;
+  height:300px;
+}
+.things .get {
+  font-size: 17px;
+}
+.things .t_container .t-item img{
+  width: 375px;
+
+}
+.max1 .card{
+  /* margin:0; */
+}
+.play .approved img{
+  width: 325px;
+
+}
+
+.play .approved .customers{
+  font-size: 21px;
+
+}
 }

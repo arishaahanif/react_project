@@ -14,6 +14,8 @@ const sliderArr = [
     text: "This  30-Hour Construction OSHA training is intended for workers with supervisory duties according to OSHA 29 CFR while also dispensing knowledge of on-site hazards.",
     cutPrice: "$189.00",
     orginalPrice: "$150.00",
+    overLay: Image1,
+
   },
   {
     image:
@@ -22,6 +24,8 @@ const sliderArr = [
     text: "This  30-Hour Construction OSHA training is intended for workers with supervisory duties according to OSHA 29 CFR while also dispensing knowledge of on-site hazards.",
     cutPrice: "$189.00",
     orginalPrice: "$150.00",
+    overLay: Image1,
+
 
   },
   {
@@ -31,6 +35,8 @@ const sliderArr = [
     text: "This  30-Hour Construction OSHA training is intended for workers with supervisory duties according to OSHA 29 CFR while also dispensing knowledge of on-site hazards.",
     cutPrice: "$189.00",
     orginalPrice: "$150.00",
+    overLay: Image1,
+
   },
   {
     image:
@@ -49,6 +55,8 @@ const sliderArr = [
     text: "This  30-Hour Construction OSHA training is intended for workers with supervisory duties according to OSHA 29 CFR while also dispensing knowledge of on-site hazards.",
     cutPrice: "$189.00",
     orginalPrice: "$150.00",
+    overLay: Image1,
+
   },
   {
     image:
@@ -57,6 +65,8 @@ const sliderArr = [
     text: "This  30-Hour Construction OSHA training is intended for workers with supervisory duties according to OSHA 29 CFR while also dispensing knowledge of on-site hazards.",
     cutPrice: "$189.00",
     orginalPrice: "$150.00",
+    overLay: Image1,
+
   },
 ];
 
@@ -70,19 +80,35 @@ export const Slick = () => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
           dots: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 992,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
           initialSlide: 2,
         },
       },
@@ -97,7 +123,7 @@ export const Slick = () => {
   };
 
   return (
-    <div className="max">
+    <div className="max1">
       <h2 className="sell">best selling courses</h2>
       <Slider {...settings}>
         {sliderArr.map((item, index) => {
@@ -115,7 +141,7 @@ export const Slick = () => {
                 </Card.Body>
                 <Card.Footer>
                   <Row>
-                    <Col lg={6}>
+                    <Col lg={6} md={6} sm={6} xs={6}>
                       <div className="price">
                         <s
                           style={{
@@ -136,11 +162,12 @@ export const Slick = () => {
                         </small>
                       </div>
                     </Col>
-                    <Col lg={6}>
+                    <Col lg={6} md={6} sm={6} xs={6}>
                       <div className="enroll">
                         <Button
                           style={{
                             textAlign: "center",
+                            backgroundColor:"#fff",
                             border: "0",
                             color: " orangered",
                             fontSize: "21px",

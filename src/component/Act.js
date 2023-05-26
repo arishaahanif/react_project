@@ -9,9 +9,15 @@ function Example() {
   const [lgShow, setLgShow] = useState(false);
   return (
     <>
-<div className="show">
-<Button onClick={() => setLgShow(true)}> <span><AiFillYoutube className="youtube"size={50}/></span>Must watch before you Enroll OSHA training with us!</Button>
+<div className="show1">
+{/* <Button onClick={() => setLgShow(true)}> <span><AiFillYoutube className="youtube"size={50}/></span>Must watch before you Enroll OSHA training with us!</Button> */}
+<Button onClick={() => setLgShow(true)}>
+  <div className="y_tube">
+  <AiFillYoutube className="youtube"size={50}/>
+  <p>Must watch before you Enroll OSHA training with us!</p>
 
+  </div>
+</Button>
 </div>
       <Modal
         size="lg"
@@ -21,7 +27,7 @@ function Example() {
       >
         <Modal.Header closeButton>
           <Modal.Title id="example-modal-sizes-title-lg">
-            <iframe
+            <iframe className="say"
               width="770"
               height="315"
               src="https://www.youtube.com/embed/W-XKJ9UCh30"

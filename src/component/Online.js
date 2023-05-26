@@ -13,6 +13,7 @@ const Online = () => {
           </p>
           <iframe
             className="video"
+           
             width="700"
             height="400"
             src="https://www.youtube.com/embed/FtfYZDxcrr4"
