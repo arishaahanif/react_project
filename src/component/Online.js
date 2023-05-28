@@ -4,14 +4,15 @@ const Online = () => {
   return (
     <div className="safety">
       <Row>
-        <Col lg={12}>
+        <div className="eee">
           <h1 className="priority">
             OSHA ONLINE CENTER - YOUR SAFETY IS OUR PRIORITY
           </h1>
           <p className="need">
             All you need to know about OSHA Online Safety Training
           </p>
-          <iframe
+        <div>
+        <iframe
             className="video"
            
             width="700"
@@ -22,7 +23,8 @@ const Online = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-        </Col>
+        </div>
+        </div>
       </Row>
     </div>
   );

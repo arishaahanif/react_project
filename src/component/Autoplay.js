@@ -44,7 +44,7 @@ const AutoPlay = () => {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
@@ -85,6 +85,13 @@ const AutoPlay = () => {
       },
       {
         breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 320,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

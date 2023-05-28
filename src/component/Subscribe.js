@@ -73,13 +73,15 @@ const Subscribe = () => {
           </ul>
         </div>
         <div className="c_item ">
-        <p className="category">GET THE LATEST NEWS & UPDATES</p>
+       <div className="sub_item">
+       <p className="category">GET THE LATEST NEWS & UPDATES</p>
         <Form.Control size="lg" type="text" placeholder="Full Name" />
         <Form.Control size="lg" type="text" placeholder="Email Address" />
         <Form.Control size="lg" type="text" placeholder="Company (Optional)" />
         <Button variant="primary" size="lg">
         Subscribe
       </Button>
+        </div>
 
 
      

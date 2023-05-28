@@ -289,7 +289,9 @@ ul {
 .safety {
   text-align: center;
   padding: 60px 0px;
+  /* width:50%; */
 }
+
 .safety .priority {
   font-weight: 700;
   font-size: 34px;
@@ -505,8 +507,14 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
 }
+.things .t_container .t-item{
+  width:50%;
+  margin: 8px 10px;
+
+}
 .things .t_container .t-item img {
   border-radius: 10px;
+  width:100%;
   /* margin-right: 50px; */
 }
 .us {
@@ -729,10 +737,7 @@ ul {
   font-size: 14px;
 
 }
-.things .t_container .t-item img{
-  margin-bottom:20px;
 
-}
 .us .certificate .con .text{
   font-size: 15px;
 
@@ -741,6 +746,7 @@ ul {
   font-size: 16px;
 
 }
+
 }
 @media screen and (max-width:992px) {
   .header {
@@ -782,7 +788,7 @@ ul {
     font-size: 14px;
  }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:576px) {
 
 .safety .priority {
   font-size: 19px;
@@ -795,22 +801,80 @@ ul {
   height:300px;
 }
 .things .get {
-  font-size: 17px;
-}
-.things .t_container .t-item img{
-  width: 375px;
-
+  font-size: 16px;
 }
 .max1 .card{
-  /* margin:0; */
+  margin:0;
+}
+
+.max1 .card {
+  height: 443px;
+}
+.max1 .card .card-text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.max1 .card-img{
+  height: auto;
+
+}
+.max1 .card .card-title{
+  font-size: 18px;
+}
+.slick-next {
+  right:-59px !important;
 }
 .play .approved img{
   width: 325px;
 
 }
+.show1{
+  padding: 30px 3rem;
 
+}
+.show1 .btn{
+  padding: 6px 12px;
+
+}
+.show1 .y_tube p {
+  font-size: 13px;
+}
+.show1 .y_tube img, svg {
+  width:38px;
+}
 .play .approved .customers{
   font-size: 21px;
 
 }
+.max1 .card-img-overlay{
+  display: none;
+}
+.course .c_container {
+  display: block;
+}
+.course .c_container .c_item .sub_item{
+  padding: 0 26px;
+
+}
+.things{
+  margin-top: 20px;
+}
+}
+@media screen and (max-width:576px) {
+  .play .auto_play .card .card-img-overlay {
+    display: none;
+  }
+  .play .auto_play .card {
+    height: 201px;
+    margin:0 10px;
+  }
+  .play .auto_play .card .card-body .card-title{
+    margin-top:22px;
+    margin-bottom:0;
+    font-size:14px;
+  }
+  .play .auto_play .card .card-body img{
+    width:111px;
+  }
 }

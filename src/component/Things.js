@@ -13,11 +13,11 @@ const Things = () => {
 
       <div className="t_container">
         <div className="t-item">
-            <img src={Banner}width={500}/>
+            <img src={Banner}/>
             
         </div>
         <div className="t-item">
-            <img src={Online} width={500}/>
+            <img src={Online}/>
         </div>
       </div>
     </div>
