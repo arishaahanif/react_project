@@ -3,18 +3,16 @@ import { Row, Col } from "react-bootstrap";
 const Online = () => {
   return (
     <div className="safety">
-      <Row>
-        <div className="eee">
-          <h1 className="priority">
-            OSHA ONLINE CENTER - YOUR SAFETY IS OUR PRIORITY
-          </h1>
-          <p className="need">
-            All you need to know about OSHA Online Safety Training
-          </p>
-        <div>
-        <iframe
+      <div className="eee">
+        <h1 className="priority">
+          OSHA ONLINE CENTER - YOUR SAFETY IS OUR PRIORITY
+        </h1>
+        <p className="need">
+          All you need to know about OSHA Online Safety Training
+        </p>
+        <div className="show_iframe">
+          <iframe
             className="video"
-           
             width="700"
             height="400"
             src="https://www.youtube.com/embed/FtfYZDxcrr4"
@@ -24,8 +22,7 @@ const Online = () => {
             allowfullscreen
           ></iframe>
         </div>
-        </div>
-      </Row>
+      </div>
     </div>
   );
 };
