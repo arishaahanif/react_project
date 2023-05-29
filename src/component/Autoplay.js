@@ -101,7 +101,7 @@ const AutoPlay = () => {
   };
 
   return (
-    <div className="play">
+     <div className="play">
       <div className="approved">
         <img src={Shopper} width={500} />
         <h1 className="customers">OUR CUSTOMERS REVIEWS WITH 5-STAR RATING</h1>
@@ -116,21 +116,21 @@ const AutoPlay = () => {
         {autoArr.map((item, index) => {
           return (
             <div className="auto_play">
-              <Card>
-                <Card.Body>
-                  <Card.ImgOverlay>
-                    <div>{item.icon}</div>
-                  </Card.ImgOverlay>
+            <Card>
+              <Card.Body>
+                <Card.ImgOverlay>
+                  <div>{item.icon}</div>
+                </Card.ImgOverlay>
 
-                  <Card.Title>{item.text}</Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">
-                    <img src={item.image} width={180}></img>
-                  </Card.Subtitle>
+                <Card.Title>{item.text}</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  <img src={item.image} width={180}></img>
+                </Card.Subtitle>
 
-                  <Card.Text>{item.heading}</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
+                <Card.Text>{item.heading}</Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
           );
         })}
       </Slider>

@@ -9,8 +9,8 @@ function Example() {
   const [lgShow, setLgShow] = useState(false);
   return (
     <>
+{/* <section className="section"> */}
 <div className="show1">
-{/* <Button onClick={() => setLgShow(true)}> <span><AiFillYoutube className="youtube"size={50}/></span>Must watch before you Enroll OSHA training with us!</Button> */}
 <Button onClick={() => setLgShow(true)}>
   <div className="y_tube">
   <AiFillYoutube className="youtube"size={50}/>
@@ -19,6 +19,7 @@ function Example() {
   </div>
 </Button>
 </div>
+{/* </section> */}
       <Modal
         size="lg"
         show={lgShow}
@@ -26,9 +27,12 @@ function Example() {
         aria-labelledby="example-modal-sizes-title-lg"
       >
         <Modal.Header closeButton>
-          <Modal.Title id="example-modal-sizes-title-lg">
+         
+         </Modal.Header> 
+
+        <Modal.Body className="thomas">
+          {/* <div> */}
             <iframe className="say"
-              width="770"
               height="315"
               src="https://www.youtube.com/embed/W-XKJ9UCh30"
               title="YouTube video player"
@@ -36,10 +40,8 @@ function Example() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-          </Modal.Title>
-        </Modal.Header>
-
-        <Modal.Body className="thomas">
+            {/* </div> */}
+       
           <p className="addition">
             Here's what JT THOMAS had to say about oshaonlinecenter.com in
             addition to their video testimonial:

@@ -15,7 +15,6 @@ const sliderArr = [
     cutPrice: "$189.00",
     orginalPrice: "$150.00",
     overLay: Image1,
-
   },
   {
     image:
@@ -25,8 +24,6 @@ const sliderArr = [
     cutPrice: "$189.00",
     orginalPrice: "$150.00",
     overLay: Image1,
-
-
   },
   {
     image:
@@ -36,7 +33,6 @@ const sliderArr = [
     cutPrice: "$189.00",
     orginalPrice: "$150.00",
     overLay: Image1,
-
   },
   {
     image:
@@ -56,7 +52,6 @@ const sliderArr = [
     cutPrice: "$189.00",
     orginalPrice: "$150.00",
     overLay: Image1,
-
   },
   {
     image:
@@ -66,7 +61,6 @@ const sliderArr = [
     cutPrice: "$189.00",
     orginalPrice: "$150.00",
     overLay: Image1,
-
   },
 ];
 
@@ -151,30 +145,12 @@ export const Slick = () => {
                         >
                           {item.cutPrice}
                         </s>
-                        <small
-                          style={{
-                            display: "block",
-                            fontSize: "21px",
-                            fontWeight: "700",
-                          }}
-                        >
-                          {item.orginalPrice}
-                        </small>
+                        <small className="small">{item.orginalPrice}</small>
                       </div>
                     </Col>
                     <Col lg={6} md={6} sm={6} xs={6}>
                       <div className="enroll">
-                        <Button
-                          style={{
-                            textAlign: "center",
-                            backgroundColor:"#fff",
-                            border: "0",
-                            color: " orangered",
-                            fontSize: "21px",
-                            fontWeight: "700",
-                          }}
-                          variant="primary"
-                        >
+                        <Button className="btn" variant="primary">
                           Enroll Now
                         </Button>
                       </div>

@@ -14,7 +14,12 @@ body {
   font-family: Roboto;
   overflow-x: hidden;
 }
-
+/* :root{
+  --padding-head:1rem 2rem;
+}
+.section{
+padding:var(--padding-head)
+} */
 /* TOP.JS START */
 .main_top {
   background-color: rgba(238, 138, 30);
@@ -112,9 +117,7 @@ ul {
 }
 /* END */
 /* NAVBAR.JS START */
-.max {
-  padding: 3px 4rem;
-}
+
 .max .sell {
   text-transform: uppercase;
   font-weight: 700;
@@ -287,8 +290,8 @@ ul {
   
 
 .safety {
-  text-align: center;
-  padding: 60px 0px;
+  text-align: center; 
+   padding: 60px 0px; 
   /* width:50%; */
 }
 
@@ -386,7 +389,11 @@ ul {
   align-items: center;
   border-right: 1px solid #ecec;
 }
-
+.max1 .price .small{
+  display: block;
+  font-size: 21px;
+  font-weight: 700;
+}
 .max1 .border_col {
   border-right: 1px solid #000;
 }
@@ -399,6 +406,14 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 10px 0 0 0;
+}
+.max1 .enroll .btn{
+  text-align: center;
+  background-color:#fff;
+  border: 0;
+  color:  orangered;
+  font-size: 21px;
+  font-weight:700;
 }
 .max1 .card .card-footer {
   background-color: #fff;
@@ -505,11 +520,13 @@ ul {
 .things .t_container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  padding: 0px 5rem;
+
+  /* flex-wrap: wrap; */
 }
 .things .t_container .t-item{
-  width:50%;
-  margin: 8px 10px;
+  width:100%;
+  margin: 8px 20px;
 
 }
 .things .t_container .t-item img {
@@ -776,9 +793,7 @@ ul {
     font-size: 26px;
 
   }
-  .say{
-    width:483px;
-  }
+ 
   .safety .video {
     width:560px;
 
@@ -787,6 +802,13 @@ ul {
   width: 431px;
     font-size: 14px;
  }
+ .things .t_container {
+  flex-wrap: wrap;
+
+}
+.things .t_container .t-item{
+width:100%
+}
 }
 @media screen and (max-width:576px) {   
 
@@ -803,12 +825,11 @@ ul {
 .things .get {
   font-size: 16px;
 }
-.max1 .card{
-  margin:0;
-}
+
 
 .max1 .card {
   height: 443px;
+  margin:0;
 }
 .max1 .card .card-text{
   white-space: nowrap;
@@ -860,23 +881,21 @@ ul {
 .things{
   margin-top: 20px;
 }
+.play .auto_play .card .card-img-overlay {
+  display: none;
 }
-@media screen and (max-width:576px) {
-  .play .auto_play .card .card-img-overlay {
-    display: none;
-  }
-  .play .auto_play .card {
-    height: 201px;
-    margin:0 10px;
-  }
-  .play .auto_play .card .card-body .card-title{
-    margin-top:22px;
-    margin-bottom:0;
-    font-size:14px;
-  }
-  .play .auto_play .card .card-body img{
-    width:111px;
-  }
+.play .auto_play .card {
+  height: 201px;
+  margin:0 10px;
+}
+.play .auto_play .card .card-body .card-title{
+  margin-top:22px;
+  margin-bottom:0;
+  font-size:14px;
+}
+.play .auto_play .card .card-body img{
+  width:111px;
+}
 }
 
 @media (max-width:476px) {
@@ -887,4 +906,83 @@ ul {
       width: 100%;
       height: 100%;
     }
+}
+@media (max-width:375px){
+  .main_top .saving{
+    font-size: 11px;
+  }
+  .main_top .saving span .btn{
+    font-size: 12px;
+  }
+  .show1 .y_tube p {
+    font-size: 12px;
+}
+.max1 .sell{
+  font-size: 18px;
+}
+.max1 .price .small{
+  font-size: 18px;
+}
+.max1 .enroll .btn{
+  font-size: 17px;
+
+}
+.play .approved .customers {
+  font-size: 18px;
+}
+.safety .priority {
+  font-size: 18px;
+}
+.safety .need{
+  font-size: 11px;
+}
+.things .need{
+  font-size: 18px;
+
+}
+.things .get {
+  font-size: 12px;
+}
+.us .chos{
+  font-size: 18px;
+}
+.us .certificate .con .text {
+  font-size: 12px;
+}
+.guide .make{
+  font-size: 18px;
+}
+.guide .pass{
+  font-size: 12px;
+}
+.guide .u_container .u_item ul li{
+  font-size: 12px;
+}
+.course .c_container .c_item ul li a{
+  font-size: 12px;
+}
+.course .c_container .c_item .category {
+  font-size: 14px;
+}
+.course .c_container .c_item .accept{
+  font-size: 14px;
+}
+.course .c_container .c_item .btn{
+  font-size: 14px;
+}
+.course .c_container .c_item .form-control::placeholder {
+  font-size: 12px;
+}
+.footer .ft_container .ft_item .para{
+  font-size: 12px;
+  text-align: center;
+}
+.footer .ft_container .f_item span{
+  display: none;
+  /* width:13px; */
+
+}
+.show1 .y_tube img, svg{
+  width:38px;
+}
 }

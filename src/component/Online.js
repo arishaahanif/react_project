@@ -2,7 +2,8 @@ import { Row, Col } from "react-bootstrap";
 
 const Online = () => {
   return (
-    <div className="safety">
+   <section className="section">
+     <div className="safety">
       <div className="eee">
         <h1 className="priority">
           OSHA ONLINE CENTER - YOUR SAFETY IS OUR PRIORITY
@@ -24,6 +25,7 @@ const Online = () => {
         </div>
       </div>
     </div>
+   </section>
   );
 };
 export default Online;

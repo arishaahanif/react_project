@@ -27,7 +27,7 @@ function App() {
       <Act />
       <Slick />
       <Autoplay/>
-      {/* <Onlines /> */}
+      <Onlines />
       <Things/>
       <Choose/>
       <State/>

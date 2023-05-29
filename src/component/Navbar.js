@@ -34,7 +34,8 @@ function NavScrollExample() {
     </Modal>
   );
   return (
-    <div className="max">
+    <section className="section">
+      <div className="max">
       <Navbar expand="lg">
         <Navbar.Brand href="#">
           <div className="logo">
@@ -79,6 +80,7 @@ function NavScrollExample() {
         {modalContent}
       </Navbar>
     </div>
+    </section>
   );
 }
 

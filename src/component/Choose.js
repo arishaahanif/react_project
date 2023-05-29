@@ -2,7 +2,8 @@ import { AiOutlineSafetyCertificate } from "react-icons/ai";
 
 const Choose = () => {
   return (
-    <div className="us">
+ <section className="section">
+     <div className="us">
       <h2 className="chos">Why Choose Us?</h2>
 
       <div className="certificate">
@@ -45,6 +46,7 @@ const Choose = () => {
         </div>
       </div>
     </div>
+ </section>
   );
 };
 export default Choose;

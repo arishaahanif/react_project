@@ -1,6 +1,6 @@
 const State = () => {
   return (
-    <div className="guide">
+      <div className="guide">
       <h1 className="make">State Guides</h1>
       <p className="pass">
         OSHA Online Center Courses makes it simple to take and pass your course.

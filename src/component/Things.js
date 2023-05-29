@@ -4,7 +4,7 @@ import Online from "../Images/dol-card-banner_gxkgsz.webp"
 
 const Things = () => {
   return (
-    <div className="things">
+     <div className="things">
       <h2 className="need">THINGS YOU NEED TO KNOW</h2>
       <p className="get">
         Get your OSHA DOL Card upon successfully completing your safety
