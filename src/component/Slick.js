@@ -137,11 +137,8 @@ export const Slick = () => {
                   <Row>
                     <Col lg={6} md={6} sm={6} xs={6}>
                       <div className="price">
-                        <s
-                          style={{
-                            color: "#808080",
-                            fontSize: "15px",
-                          }}
+                        <s className="s_card"
+                         
                         >
                           {item.cutPrice}
                         </s>

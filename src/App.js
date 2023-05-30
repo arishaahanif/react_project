@@ -1,6 +1,7 @@
 import "./App.css";
 import Tops from "./component/Top";
 import Headers from "./component/Header";
+import Offcanvas from "./component/OffCanvs"
 import Navbars from "./component/Navbar";
 import Center from "./component/Center";
 import Act from "./component/Act";
@@ -22,7 +23,8 @@ function App() {
     <>
       <Tops />
       <Headers />
-      <Navbars />
+      <Offcanvas/>
+      {/* <Navbars /> */}
       <Center />
       <Act />
       <Slick />

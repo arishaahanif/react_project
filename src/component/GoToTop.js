@@ -32,7 +32,7 @@ const GoToTop=()=>{
       <div className="section">
         {isVisible && (
           <div className="top-btn" onClick={goToBtn}>
-            <FaArrowUp className="--icon" />
+            <FaArrowUp className="--icon" size={20}/>
           </div>
         )}
       </div>

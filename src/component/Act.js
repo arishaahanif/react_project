@@ -31,16 +31,17 @@ function Example() {
          </Modal.Header> 
 
         <Modal.Body className="thomas">
-          {/* <div> */}
+          <div>
             <iframe className="say"
               height="315"
+              width="100%"
               src="https://www.youtube.com/embed/W-XKJ9UCh30"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            {/* </div> */}
+            </div>
        
           <p className="addition">
             Here's what JT THOMAS had to say about oshaonlinecenter.com in

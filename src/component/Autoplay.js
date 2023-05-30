@@ -44,7 +44,7 @@ const AutoPlay = () => {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
@@ -70,7 +70,7 @@ const AutoPlay = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
         },
@@ -119,7 +119,7 @@ const AutoPlay = () => {
             <Card>
               <Card.Body>
                 <Card.ImgOverlay>
-                  <div>{item.icon}</div>
+                  <div className="icon">{item.icon}</div>
                 </Card.ImgOverlay>
 
                 <Card.Title>{item.text}</Card.Title>
