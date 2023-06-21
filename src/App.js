@@ -2,7 +2,8 @@ import "./App.css";
 import Tops from "./component/Top";
 import Headers from "./component/Header";
 import Offcanvas from "./component/OffCanvs"
-import Navbars from "./component/Navbar";
+// import ResponsiveNavbar from './component/sidebar';
+
 import Center from "./component/Center";
 import Act from "./component/Act";
 import Onlines from "./component/Online";
@@ -23,6 +24,7 @@ function App() {
     <>
       <Tops />
       <Headers />
+{/* <ResponsiveNavbar/> */}
       <Offcanvas/>
       {/* <Navbars /> */}
       <Center />
