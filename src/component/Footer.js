@@ -13,13 +13,13 @@ const Footer = () => {
         </div>
         <div className="f_item">
           <span className="span">
-            <BsFacebook size={20} />
-            <AiFillYoutube size={20} />
+            <BsFacebook className="fb" size={20} />
+            <AiFillYoutube className="fb" size={20} />
 
-            <AiOutlineTwitter size={20} />
-            <AiOutlineInstagram size={20} />
+            <AiOutlineTwitter className="fb" size={20} />
+            <AiOutlineInstagram className="fb" size={20} />
 
-            <AiFillLinkedin size={20} />
+            <AiFillLinkedin className="fb" size={20} />
           </span>
         </div>
       </div>

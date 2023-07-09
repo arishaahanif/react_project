@@ -136,8 +136,8 @@ ul {
 .max .navbar-expand-lg .navbar-nav .nav-link {
   color: #000;
   font-weight: 600;
-  font-size: 15px;
-  margin: 0 4px;
+  /* font-size: 15px; */
+  /* margin: 0 4px; */
 }
 
 /* .max .navbar-expand-lg .navbar-nav .active{
@@ -744,21 +744,22 @@ ul {
   color:orangered;
   background-color:#fff;
 }
-.off_btn{
-  display: none;
-}
+
 
 
 
 @media screen and (max-width:1200px) {
-  .max{
+  /* .max{
     padding:0;
-  }
+  } */
   .max .logo img {
     width: 102px;
 }
 .max .navbar-expand-lg .icons{
   display: none;
+}
+.max .navbar-expand-lg .navbar-nav .nav-link{
+  margin:0;
 }
 .max .navbar-expand-lg .navbar-nav .review{
   width: 65px;
@@ -1064,5 +1065,8 @@ width:100%
 }
 .max1 .price .s_card{
   font-size: 12px;
+}
+.footer .ft_container .f_item .span .fb{
+  width:27px;
 }
 }
