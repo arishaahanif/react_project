@@ -284,7 +284,7 @@ ul {
 
 .safety {
   text-align: center; 
-   padding: 60px 0px; 
+  padding: 45px 0px 10px 0px;
   /* width:50%; */
 }
 
@@ -350,7 +350,7 @@ ul {
   border-radius: 0;
 }
 .max1 .card {
-  height: 529px;
+  height: 574px;
 
   margin: 0 29px;
   border-radius: 0;
@@ -483,7 +483,9 @@ ul {
   align-items: center;
   justify-content: space-around;
 }
-
+.play .auto_play .card .card-img-overlay .icon img, svg{
+  font-size:30px;
+}
 .play .auto_play .card .card-body .card-title {
   margin-top: 70px;
   margin-bottom: 20px;
@@ -720,8 +722,8 @@ ul {
   background-color: orangered;
   border-radius: 50%;
   position: fixed;
-  bottom:5rem;
-  right:5rem;
+  bottom:6rem;
+  right:1rem;
   z-index:999;
   display: flex;
   justify-content: center;
@@ -844,6 +846,22 @@ width:100%
 .us .certificate .con{
   width: 25%;
 }
+.max .navbar-expand-lg .navbar-nav .review{
+  margin: 5px 17px 6px 0px;
+  width: 83px;
+  font-size: 14px;
+  font-weight:600
+
+
+}
+.max .navbar-expand-lg .navbar-nav .reviews{
+  margin: 5px 17px 6px 0px;
+  width: 145px;
+
+  /* width: 83px; */
+  font-size: 14px;
+  font-weight:600
+}
 }
 
 @media screen and (max-width:576px) {   
@@ -916,9 +934,7 @@ width:100%
   padding: 0 26px;
 
 }
-.things{
-  margin-top: 20px;
-}
+
 .play .auto_play .card .card-img-overlay {
   display: none;
 }
