@@ -14,22 +14,13 @@ body {
   font-family: Roboto;
   overflow-x: hidden;
 }
-/* :root{
-  --padding-head:1rem 2rem;
-}
-.section{
-padding:var(--padding-head)
-} */
+
 /* TOP.JS START */
 .main_top {
   background-color: rgba(238, 138, 30);
   padding: 9px 0px 1px 0px;
   text-align: center;
-  /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;  */
+ 
 }
 
 .main_top .saving {
@@ -218,10 +209,7 @@ ul {
   --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
-/* .show1 span .youtube {
-  margin: 0 10px;
-  color: orangered;
-} */
+
 .show1 .y_tube{
   display: flex;
     justify-content: center;
