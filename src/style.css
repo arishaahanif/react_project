@@ -977,6 +977,10 @@ width:100%
       width: 100%;
       height: 100%;
     }
+    .max{
+      padding: 3px 2rem;
+
+    }
     /* .footer .ft_container .f_item span{
       display: none;
     
