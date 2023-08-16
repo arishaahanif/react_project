@@ -735,7 +735,9 @@ ul {
   background-color:#fff;
 }
 
-
+.offcanvas.offcanvas-end{
+  overflow-x: scroll;
+}
 
 
 @media screen and (max-width:1200px) {

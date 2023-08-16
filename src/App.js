@@ -16,10 +16,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.min";
 import "./style.css";
 import { Slick } from "./component/Slick";
+import { AppProvider } from "./Context.js/Counter";
 
 function App() {
   return (
     <>
+    <AppProvider>
       <Tops />
       <Headers />
       <Navbar />
@@ -34,6 +36,7 @@ function App() {
       <Subscribe />
       <Footer />
       <GoToTop />
+      </AppProvider>
     </>
   );
 }
